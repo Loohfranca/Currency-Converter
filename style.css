@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+}
+
+.logo {
+    width: 200px;
+    display: block;
+    margin: 20px auto;
+
+}
+
+body {
+    background-image: url(assets/3127962-abstrato-laranja-e-azul-onda-pontos-particulas-sobre-fundo-azul-escuro-gratis-vetor.jpg);
+   
+}
+
+main {
+    width: 375px;
+    background-color: rgb(6, 35, 70);
+    border-radius: 26px;
+    margin: 0 auto;
+    padding: 44px 24px 23px ;
+}
+
+label{
+    color: #b9aeae;
+    font-weight: 400;
+    font-size: 14px;
+    
+}
+
+select{
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    appearance: none;
+    padding-left: 18px;
+    font-weight: 200;
+    font-size: 16px;
+    color: #555555;
+   
+}
+input{
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    padding-left: 18px;
+    font-weight: 200;
+    font-size: 16px;
+    color: #555555;
+}
+
+button{
+    background: #ee840b;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin-top: 25px;
+    border: none;
+    cursor: pointer;
+    color: rgb(6, 35, 70);
+    font-weight: 700;
+    font-size: 18px;
+ 
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+button:active{
+    opacity: 0.6;
+}
+
+section{
+    border: 1px solid #ffffff;
+    border-radius: 24px ;
+    margin-top: 30px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-weight: 400;
+
+
+}
+p{
+    color: #ffffff;
+    font-weight: 700;
+}
+.convertion{
+    font-weight: 200;
+    color: #b9aeae;
+}
+
+.arrow{
+margin: 15px ;
+
+
+}
+
