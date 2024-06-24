@@ -1,6 +1,8 @@
 const convertbutton = document.querySelector(".convert-button")
 const convertSelect = document.querySelector(".convert-select")
 
+
+
 function convertValues() {
     const inputConvertValue = document.querySelector(".input-convert").value
     const convertvalueReal = document.querySelector(".convert-value-real") // valor real
@@ -9,6 +11,8 @@ function convertValues() {
     console.log(convertSelect.value)
     const dolartoday = 5.2
     const eurotoday = 6.2
+    const libratoday = 6.80
+    const Bitcointoday = 330.275
 
 
 
@@ -28,6 +32,21 @@ function convertValues() {
 
     }
 
+    if (convertSelect.value == "Libra") { 
+        convertvalueConverted.innerHTML = new Intl.NumberFormat('de-DE', {
+            style: 'currency',
+            currency: 'GPB'
+        }).format(inputConvertValue / libratoday)
+
+    }
+
+    if (convertSelect.value == "Bitcoin") { 
+        convertvalueConverted.innerHTML = new Intl.NumberFormat('de-DE', {
+            style: 'currency',
+            currency: 'BTC'
+        }).format(inputConvertValue / Bitcointoday)
+
+    }
 
     convertvalueReal.innerHTML = new Intl.NumberFormat('pt-BR', {
         style: 'currency',
@@ -53,9 +72,23 @@ function changeConvert() {
         convertImage.src = "assets/euroo.png.png"
 
     }
+
+    if (convertSelect.value == "Libra") {
+        convertName.innerHTML = "Libra"
+        convertImage.src = "assets/libra.png"
+    }
+
+
+
+    if (convertSelect.value == "Bitcoin") {
+        convertName.innerHTML = "Bitcoin"
+        convertImage.src = "assets/bittcoin.png" 
+
+    }
     convertValues()
 }
 
 
 convertSelect.addEventListener("change", changeConvert)
 convertbutton.addEventListener("click", convertValues)
+convertbutton.addEventListener("click", converterAsMoedas)
